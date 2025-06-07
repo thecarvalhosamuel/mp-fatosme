@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fira_Code, Fira_Sans_Condensed, Montserrat } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/common/header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const montserratSan = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const firaCode = Fira_Code({
+  variable: "--font-fira-code",
   subsets: ["latin"],
 });
 
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   description: "Atendimento online para adultos",
   viewport: "width=device-width, initial-scale=1",
   creator: "Samuel Carvalho",
-  authors:[{name: 'Samuel Carvalho', url: 'https://github.com/thecarvalhosamuel'}],
-  keywords:['psicologia', 'psicologa', 'terapia', 'aconselhamento', 'saude', 'saude mental', 'mente'],
+  authors: [{ name: 'Samuel Carvalho', url: 'https://github.com/thecarvalhosamuel' }],
+  keywords: ['psicologia', 'psicologa', 'terapia', 'aconselhamento', 'saude', 'saude mental', 'mente'],
   category: 'health',
 };
 
@@ -31,10 +31,12 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${montserratSan.variable} ${firaCode.variable} antialiased item-center justify-center flex w-full max-w-7xl mx-auto`}
       >
-        <Header/>
-        {children}
+        <Header />
+        <div className="flex w-full">
+          {children}
+        </div>
       </body>
     </html>
   );

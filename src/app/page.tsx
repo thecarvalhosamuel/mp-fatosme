@@ -1,7 +1,9 @@
+import { WhoAmI } from "@/components/howAmI";
+
 export default function Home() {
   return (
-    <div>
-      <h1>Hello Maria Paula</h1>
+    <div className="flex gap-4 pt-12">
+      <WhoAmI />
     </div>
   )
 }
