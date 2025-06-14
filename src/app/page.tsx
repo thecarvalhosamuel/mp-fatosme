@@ -44,7 +44,7 @@ O que se faz na análise é pensar o diagnóstico como um todo, entender os sint
             {
               question: 'Como faço para agendar?',
               answer:
-                'Clique no botão abaixo para marcar nossa conversa inicial. Ela serve para nos conhecermos, você tirar suas dúvidas e entender se é mesmo o que procura, além de definirmos os valores, horários e a frequência. Caso queira prosseguir, agendamos a primeira sessão.',
+                '<a class="text-blue-500 hover:underline" href="#agendar" target="_blank">Clique aqui</a> para marcar nossa conversa inicial. Ela serve para nos conhecermos, você tirar suas dúvidas e entender se é mesmo o que procura, além de definirmos os valores, horários e a frequência. Caso queira prosseguir, agendamos a primeira sessão.',
             },
           ]}
         />
