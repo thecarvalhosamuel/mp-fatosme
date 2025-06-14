@@ -48,7 +48,7 @@ const Footer2 = ({
     <section className='px-4 py-12'>
       <div className='container'>
         <footer>
-          <div className='flex flex-row justify-between gap-8'>
+          <div className='flex flex-col md:flex-row justify-between gap-8'>
             <div className='col-span-2 mb-8 lg:mb-0'>
               <div className='flex items-center gap-2 lg:justify-start'>
                 <a href='https://shadcnblocks.com'>
@@ -97,7 +97,7 @@ const Footer2 = ({
               ))}
             </div>
           </div>
-          <div className='text-muted-foreground mt-6 flex flex-col justify-between gap-4 border-t pt-8 text-sm font-medium md:flex-row md:items-center'>
+          <div className='items-center text-muted-foreground mt-6 flex flex-col justify-between gap-4 border-t pt-8 text-sm font-medium md:flex-row md:items-center'>
             <p>{copyright}</p>
             <ul className='flex gap-4'>
               <span className='right-0 max-w-xl text-xs'>
@@ -110,7 +110,7 @@ const Footer2 = ({
           </div>
         </footer>
       </div>
-    </section>
+    </section> 
   )
 }
 

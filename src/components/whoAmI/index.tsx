@@ -7,9 +7,9 @@ export function WhoAmI() {
   return (
     <section
       id='sobre-mim'
-      className='relative flex w-full flex-col items-center justify-center gap-4 rounded-xl bg-[#EFE6DF] p-4 shadow-lg md:p-8'
+      className='relative flex w-full flex-col sm:flex-row md:row-col items-center justify-center gap-4 rounded-xl bg-[#EFE6DF] p-4 shadow-lg md:p-8'
     >
-      <div className='flex w-full items-center justify-center gap-4'>
+      <div className='flex w-full flex-col items-center justify-center gap-4 md:flex-row'>
         <div className='relative flex aspect-[3/4] w-[30%] items-center justify-center'>
           <Image
             src='/images/maria.jpeg'
@@ -20,7 +20,7 @@ export function WhoAmI() {
             style={{ maxWidth: 300, maxHeight: 300, objectFit: 'cover' }}
           />
         </div>
-        <div className='flex w-[70%] flex-col justify-center p-6'>
+          <div className='flex w-full flex-col justify-center p-6 md:w-[70%]'>
           <div className='flex flex-col gap-2'>
             <div className='flex flex-col'>
               <h2 className=''>Prazer,</h2>
