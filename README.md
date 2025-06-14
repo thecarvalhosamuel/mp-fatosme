@@ -38,3 +38,4 @@ npm install
 
 # Inicie o servidor de desenvolvimento
 npm run dev
+```

@@ -1,11 +1,9 @@
 interface SocialProps {
- name: string;
-  color?: string;
-  size?: number;
-  link: string  
-  tooltipText?: string;
+  name: string
+  color?: string
+  size?: number
+  link: string
+  tooltipText?: string
 }
 
-export type {
-  SocialProps,
-}
+export type { SocialProps }
