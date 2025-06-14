@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Social } from '../social'
+import Image from 'next/image'
 
 interface MenuItem {
   links: {
@@ -51,14 +52,13 @@ const Footer2 = ({
           <div className='flex flex-col md:flex-row justify-between gap-8'>
             <div className='col-span-2 mb-8 lg:mb-0'>
               <div className='flex items-center gap-2 lg:justify-start'>
-                <a href='https://shadcnblocks.com'>
-                  <img
-                    src={logo.src}
-                    alt={logo.alt}
-                    title={logo.title}
-                    className='h-10'
-                  />
-                </a>
+                <Image
+                  src='/images/logo.webp'
+                  alt='Logo Psi Maria Paula'
+                  width={100}
+                  height={96}
+                  className='h-24 w-auto'
+                />
                 <p className='text-xl font-semibold'>{logo.title}</p>
               </div>
               <p className='mt-4 font-bold'>{tagline}</p>
@@ -110,7 +110,7 @@ const Footer2 = ({
           </div>
         </footer>
       </div>
-    </section> 
+    </section>
   )
 }
 
