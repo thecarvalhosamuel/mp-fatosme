@@ -1,7 +1,4 @@
-import {Bottom} from './bottomWave'
-import {Top} from './topWave'
+import { Bottom } from './bottomWave'
+import { Top } from './topWave'
 
-export {
-  Bottom as WaveBottom,
-  Top as WaveTop
-}
+export { Bottom as WaveBottom, Top as WaveTop }

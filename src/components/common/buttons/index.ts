@@ -1,5 +1,3 @@
-import {ScheduleButton} from './schedule'
+import { ScheduleButton } from './schedule'
 
-export {
-  ScheduleButton
-}
+export { ScheduleButton }

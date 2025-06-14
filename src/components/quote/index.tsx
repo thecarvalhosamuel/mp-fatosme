@@ -1,6 +1,6 @@
 interface QuoteProps {
-  text: string;
-  author: string;
+  text: string
+  author: string
 }
 
 export function Quote({ text, author }: QuoteProps) {
@@ -17,9 +17,9 @@ export function Quote({ text, author }: QuoteProps) {
     //   <p className="text-lg leading-relaxed">"{text}"</p>
     //   <footer className="mt-2 text-sm text-right text-foreground">– {author}</footer>
     // </blockquote>
-    <div className="p-4 max-w-lg">
-      <p className="text-3xl text-right italic text-gray-800 mb-2">“{text}”</p>
-      <p className="text-sm text-gray-500 text-right">— {author}</p>
+    <div className='max-w-lg p-4'>
+      <p className='mb-2 text-right text-3xl text-gray-800 italic'>“{text}”</p>
+      <p className='text-right text-sm text-gray-500'>— {author}</p>
     </div>
   )
 }
