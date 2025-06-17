@@ -1,24 +1,30 @@
+'use client'
 import { FaqSection } from '@/components/common/faq'
-import { Powered } from '@/components/common/powered'
-import { WaveBottom, WaveTop } from '@/components/common/wave'
+import { WaveTop } from '@/components/common/wave'
+import { Hero } from '@/components/hero'
 import { PsycologistSection } from '@/components/psycologistSection'
 
 import { WhoAmI } from '@/components/whoAmI'
+import { sendWhatsAppMessage } from '@/utils/whatsapp'
 
 export default function Home() {
+  function handleWhatsapp(){
+    sendWhatsAppMessage()
+  }
+
   return (
     <div className='my-2 flex flex-col'>
+      {/* <Hero /> */}
       <WhoAmI />
-
       <PsycologistSection
-        title='O que é a psicologia junguiana?'
+        title='O que é a Psicologia Junguiana?'
         content={`A Psicologia Junguiana, originada a partir das ideias do psiquiatra suíço Carl Gustav Jung, traz conceitos que influenciam toda a cultura ocidental, tais como arquétipos, inconsciente coletivo e processo de individuação.
         A formação filosófica de Jung, o interesse pelas diversas religiões, assim como o estudo de mitologia, antropologia e alquimia foram fundamentais para a construção dos principais conceitos da Psicologia Analítica.
         Entender o funcionamento dessa estrutura possibilita que possamos ter mais escolhas e, quem sabe, escolher novos caminhos em futuras oportunidades. É isso o que a análise proporciona: entender melhor a estrutura, o funcionamento dos processos inconscientes e escolher o que fazer com isso.
         O que se pode esperar de um analista é uma escuta atenciosa e dialética, sem julgamentos morais sob aquilo que se escuta. O papel do analista é escutar o inconsciente e ajudar a pessoa a escutá-lo também.`}
       />
-      <div className='relative flex flex-col gap-4 rounded-lg bg-white p-4 shadow-md'>
-        <WaveTop colorFill='#636033' />
+      <div className='relative flex flex-col gap-4 rounded-lg bg-[#F4EDE8] p-4 shadow-md'>
+        <WaveTop colorFill='#A96058' />
         <FaqSection
           faqs={[
             {
@@ -44,7 +50,7 @@ O que se faz na análise é pensar o diagnóstico como um todo, entender os sint
             {
               question: 'Como faço para agendar?',
               answer:
-                '<a class="text-blue-500 hover:underline" href="#agendar" target="_blank">Clique aqui</a> para marcar nossa conversa inicial. Ela serve para nos conhecermos, você tirar suas dúvidas e entender se é mesmo o que procura, além de definirmos os valores, horários e a frequência. Caso queira prosseguir, agendamos a primeira sessão.',
+                `<a class="text-primary font-bold hover:underline" href='#agendar'>Clique aqui</a> para marcar nossa conversa inicial. Ela serve para nos conhecermos, você tirar suas dúvidas e entender se é mesmo o que procura, além de definirmos os valores, horários e a frequência. Caso queira prosseguir, agendamos a primeira sessão.`,
             },
           ]}
         />

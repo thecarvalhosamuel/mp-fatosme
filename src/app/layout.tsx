@@ -49,11 +49,17 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${montserratSan.variable} ${firaCode.variable} item-center mx-auto flex w-full max-w-[90rem] flex-col justify-center antialiased`}
+        className={`${montserratSan.variable} ${firaCode.variable} `}
       >
-        <Header />
-        <div className='mt-16 flex w-full'>{children}</div>
-        <Footer2 />
+        <div className='item-center mx-auto flex w-full max-w-[90rem] flex-col justify-center antialiased '>
+          <Header />
+          <div className='mt-16 flex w-full'>{children}</div>
+        </div>
+        <div className='w-full flex-col justify-center antialiased bg-[#A96058] mt-4'>
+          <div className='item-center mx-auto flex w-full max-w-[90rem] flex-col justify-center mt-8 pb-4'>
+            <Footer2 />
+          </div>
+        </div>
         <Powered />
       </body>
     </html>
