@@ -16,11 +16,11 @@ export function Social({
         <Link
           href={link}
           target='_blank'
-          className='flex h-10 w-10 items-center justify-center transition-colors duration-300 hover:rounded-full hover:bg-gray-200'
+          className='flex h-10 w-10 items-center justify-center transition-colors duration-300 hover:rounded-full'
           aria-label={tooltipText}
         >
           <i
-            className={`${name} text-[${size ?? '3xl'}] font-[${color}] hover:scale-150`}
+            className={`${name} text-3xl font-[${color}] hover:scale-150`}
           ></i>
           {/* <i className="fa-brands fa-instagram"></i> */}
         </Link>

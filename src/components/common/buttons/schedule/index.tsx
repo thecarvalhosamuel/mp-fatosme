@@ -1,20 +1,16 @@
-import Link from 'next/link'
-import { env } from '@/config/env'
 import { Tooltip, TooltipContent, TooltipTrigger } from '../../ui/tooltip'
+import { sendWhatsAppMessage } from '@/utils/whatsapp'
 
 export function ScheduleButton() {
   return (
     <Tooltip>
       <TooltipTrigger asChild>
         <div id='#agendar' className='flex items-center justify-center'>
-          <Link
-            href={`http://api.whatsapp.com/send?phone=${env.WHATSAPP}&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta`}
-            target='_blank'
-            rel='noopener noreferrer'
-            className='bg-accent hover:bg-accent-hover rounded-lg px-6 py-2 text-white transition-colors'
+          <span onClick={sendWhatsAppMessage}
+            className='bg-primary text-xl hover:bg-accent-hover rounded-lg px-6 py-2 text-white transition-colors cursor-pointer'
           >
             Agendar consulta
-          </Link>
+          </span>
         </div>
       </TooltipTrigger>
       <TooltipContent>

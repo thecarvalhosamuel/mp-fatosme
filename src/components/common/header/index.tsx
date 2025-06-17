@@ -41,7 +41,7 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className='text-sm font-medium transition-colors hover:text-indigo-600'
+              className='text-sm font-medium transition-colors text-white hover:text-gray-400'
             >
               {link.label}
             </Link>
@@ -53,7 +53,7 @@ export function Header() {
           <Drawer direction='right'>
             <DrawerTrigger asChild>
               <Button variant='ghost' size='icon'>
-                <Menu className='h-6 w-6' />
+                <Menu className='h-8 w-8' color='white' />
               </Button>
             </DrawerTrigger>
 
@@ -84,7 +84,7 @@ export function Header() {
                   <DrawerClose asChild key={link.href}>
                     <Link
                       href={link.href}
-                      className='text-base font-medium transition-colors hover:text-indigo-600'
+                      className='text-base font-medium transition-colors hover:text-gray-400'
                     >
                       {link.label}
                     </Link>

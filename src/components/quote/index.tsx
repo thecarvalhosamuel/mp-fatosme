@@ -18,7 +18,7 @@ export function Quote({ text, author }: QuoteProps) {
     //   <footer className="mt-2 text-sm text-right text-foreground">– {author}</footer>
     // </blockquote>
     <div className='max-w-lg p-4'>
-      <p className='mb-2 text-right text-3xl text-gray-800 italic'>“{text}”</p>
+      <p className='mb-2 text-center font-medium text-3xl text-primary italic'>“{text}”</p>
       <p className='text-right text-sm text-gray-500'>— {author}</p>
     </div>
   )
