@@ -27,24 +27,24 @@ export function Header() {
           <span>&emsp;</span>
           <Link href='/' className='text-2xl font-bold'>
             <Image
-              src='/images/logo.webp'
+              src='/images/logo.png'
               alt='Maria Paula Fatosme'
-              width={1000}
+              width={100}
               height={40}
-              className='h-8 w-auto object-contain scale-200 sm:ml-4'
+              className='h-8 w-auto object-contain scale-150 sm:ml-4'
             />
           </Link>
         </div>
         {/* Desktop Menu */}
         <nav className='hidden gap-6 md:flex'>
           {navLinks.map((link) => (
-            <Link
+            <a
               key={link.href}
               href={link.href}
               className='text-sm font-medium transition-colors text-white hover:text-gray-400'
             >
               {link.label}
-            </Link>
+            </a>
           ))}
         </nav>
 
@@ -82,12 +82,12 @@ export function Header() {
               <nav className='flex flex-col gap-4 px-4 py-6'>
                 {navLinks.map((link) => (
                   <DrawerClose asChild key={link.href}>
-                    <Link
+                    <a
                       href={link.href}
                       className='text-base font-medium transition-colors hover:text-gray-400'
                     >
                       {link.label}
-                    </Link>
+                    </a>
                   </DrawerClose>
                 ))}
               </nav>

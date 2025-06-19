@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { Social } from '../social'
 import Image from 'next/image'
 
@@ -83,14 +82,14 @@ const Footer2 = ({
                     key={linkIdx}
                     className='text-white hover:text-gray-300 font-medium'
                   >
-                    <Link
+                    <a
                       href={link.url}
                       className='hover:underline'
                       rel='noopener noreferrer'
                       title={link.text}
                     >
                       {link.text}
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>

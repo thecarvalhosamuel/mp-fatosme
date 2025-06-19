@@ -5,7 +5,7 @@ export function ScheduleButton() {
   return (
     <Tooltip>
       <TooltipTrigger asChild>
-        <div id='#agendar' className='flex items-center justify-center'>
+        <div id='agendar' className='flex items-center justify-center'>
           <span onClick={sendWhatsAppMessage}
             className='bg-primary text-xl hover:bg-accent-hover rounded-lg px-6 py-2 text-white transition-colors cursor-pointer'
           >
