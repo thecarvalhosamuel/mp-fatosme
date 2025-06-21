@@ -1,6 +1,7 @@
 import { env } from '@/config/env'
 import { Social } from '../social'
 import Image from 'next/image'
+import {faInstagram, faWhatsapp} from '@fortawesome/free-brands-svg-icons'
 
 interface MenuItem {
   links: {
@@ -61,20 +62,14 @@ const Footer2 = ({
               {/* <p className='text-xl font-semibold'>{logo.title}</p> */}
             </div>
             <p className='mt-4 font-bold'>{tagline}</p>
-            <div className='flex gap-4'>
+            <div className='flex gap-4 mt-2'>
               <Social
-                size={64}
-                name='fa-brands fa-instagram'
+                name={faInstagram}
                 link='https://www.instagram.com/psi.mariapaulafatosme'
                 tooltipText='Visite meu Instagram'
               />
-              {/* <Social
-                name='fa-brands fa-linkedin'
-                link='#'
-                tooltipText='Visite meu Linkedin'
-              /> */}
               <Social
-                name='fa-brands fa-whatsapp'
+                name={faWhatsapp}
                 link={`https://api.whatsapp.com/send?phone=${env.WHATSAPP}`}
                 tooltipText='Vamos conversar?'
               />

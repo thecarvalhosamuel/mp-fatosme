@@ -1,14 +1,15 @@
-import { DynamicIcon } from 'lucide-react/dynamic'
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip'
 import { SocialProps } from '@/interfaces/components/social'
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export function Social({
   name,
-  color = '#000',
+  color = '#fff',
   size = 24,
   link,
   tooltipText,
+  children,
 }: SocialProps) {
   return (
     <Tooltip>
@@ -16,13 +17,15 @@ export function Social({
         <Link
           href={link}
           target='_blank'
-          className='flex h-10 w-10 items-center justify-center transition-colors duration-300 hover:rounded-full'
+          className='flex items-center justify-center transition-colors duration-300 hover:cursor-pointer gap-1 '
           aria-label={tooltipText}
         >
-          <i
-            className={`${name} text-3xl font-[${color}] hover:scale-150`}
-          ></i>
-          {/* <i className="fa-brands fa-instagram"></i> */}
+          <FontAwesomeIcon
+            icon={name}
+            className='hover:scale-150 transition-transform duration-300 ease-in-out'
+            style={{ width: size, height: size, color: `${color}` }}
+          />
+          {children}
         </Link>
       </TooltipTrigger>
       {tooltipText && (
