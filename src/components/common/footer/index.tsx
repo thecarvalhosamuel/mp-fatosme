@@ -1,3 +1,4 @@
+import { env } from '@/config/env'
 import { Social } from '../social'
 import Image from 'next/image'
 
@@ -64,13 +65,18 @@ const Footer2 = ({
               <Social
                 size={64}
                 name='fa-brands fa-instagram'
-                link='#'
+                link='https://www.instagram.com/psi.mariapaulafatosme'
                 tooltipText='Visite meu Instagram'
               />
-              <Social
+              {/* <Social
                 name='fa-brands fa-linkedin'
                 link='#'
                 tooltipText='Visite meu Linkedin'
+              /> */}
+              <Social
+                name='fa-brands fa-whatsapp'
+                link={`https://api.whatsapp.com/send?phone=${env.WHATSAPP}`}
+                tooltipText='Vamos conversar?'
               />
             </div>
           </div>
