@@ -45,23 +45,23 @@ export default function RootLayout({
     <html lang='pt-br'>
       <Head>
         {/* Favicon tradicional */}
-        <link rel="icon" type="image/png" sizes="512x512" href="/favicons/favicon-512x512.png" />
-        <link rel="icon" type="image/png" sizes="256x256" href="/favicons/favicon-256x256.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/favicons/favicon-192x192.png" />
-        <link rel="icon" type="image/png" sizes="152x152" href="/favicons/favicon-152x152.png" />
-        <link rel="icon" type="image/png" sizes="128x128" href="/favicons/favicon-128x128.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png" />
-        <link rel="icon" type="image/png" sizes="64x64" href="/favicons/favicon-64x64.png" />
-        <link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
-        <link rel="shortcut icon" href="/favicons/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/images/favicons/favicon-512x512.png" />
+        <link rel="icon" type="image/png" sizes="256x256" href="/images/favicons/favicon-256x256.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/images/favicons/favicon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="152x152" href="/images/favicons/favicon-152x152.png" />
+        <link rel="icon" type="image/png" sizes="128x128" href="/images/favicons/favicon-128x128.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/images/favicons/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="64x64" href="/images/favicons/favicon-64x64.png" />
+        <link rel="icon" type="image/png" sizes="48x48" href="/images/favicons/favicon-48x48.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png" />
+        <link rel="shortcut icon" href="/images/favicons/favicon.ico" />
 
         {/* Apple Touch Icon */}
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/favicon-180x180.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/favicon-180x180.png" />
 
         {/* Android/Chrome */}
-        <link rel="manifest" href="/favicons/site.webmanifest" />
+        <link rel="manifest" href="/images/favicons/site.webmanifest" />
 
         {/* Meta para tema do navegador */}
         <meta name="theme-color" content="#ffffff" />
