@@ -49,7 +49,7 @@ export function WhoAmI() {
             </p>
             <p className='text-xl'>
               Acredito numa análise viva que acompanhe o tempo e local em que
-              está inserida. Por isso, entendo que a psicologia junguiana
+              está inserida. Por isso, entendo que a psicologia analítica
               sozinha não basta, é preciso estar atento às questões sociais
               produzidas e a forma como elas afetam cada sujeito. E é isso o que
               eu trabalho para que aconteça na minha clínica:{' '}
