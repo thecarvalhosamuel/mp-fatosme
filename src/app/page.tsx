@@ -3,7 +3,6 @@ import { FaqSection } from '@/components/common/faq'
 import { WaveTop } from '@/components/common/wave'
 import { Hero } from '@/components/hero'
 import { PsycologistSection } from '@/components/psycologistSection'
-
 import { WhoAmI } from '@/components/whoAmI'
 import { useEffect } from 'react'
 
@@ -49,8 +48,8 @@ export default function Home() {
       <ScrollToHashWithOffset />
       <WhoAmI />
       <PsycologistSection
-        title='O que é a Psicologia Junguiana?'
-        content={`A Psicologia Junguiana, originada a partir das ideias do psiquiatra suíço Carl Gustav Jung, traz conceitos que influenciam toda a cultura ocidental, tais como arquétipos, inconsciente coletivo e processo de individuação.
+        title='O que é a Psicologia Analítica?'
+        content={`A Psicologia Analítica, originada a partir das ideias do psiquiatra suíço Carl Gustav Jung, traz conceitos que influenciam toda a cultura ocidental, tais como arquétipos, inconsciente coletivo e processo de individuação.
         A formação filosófica de Jung, o interesse pelas diversas religiões, assim como o estudo de mitologia, antropologia e alquimia foram fundamentais para a construção dos principais conceitos da Psicologia Analítica.
         Entender o funcionamento dessa estrutura possibilita que possamos ter mais escolhas e, quem sabe, escolher novos caminhos em futuras oportunidades. É isso o que a análise proporciona: entender melhor a estrutura, o funcionamento dos processos inconscientes e escolher o que fazer com isso.
         O que se pode esperar de um analista é uma escuta atenciosa e dialética, sem julgamentos morais sob aquilo que se escuta. O papel do analista é escutar o inconsciente e ajudar a pessoa a escutá-lo também.`}
@@ -71,8 +70,8 @@ export default function Home() {
             },
             {
               question: 'Psicologia Analítica trata depressão? E ansiedade?',
-              answer: `Sim, a Psicologia Junguiana pode ser uma forma de tratamento para qualquer sofrimento psíquico. Porém, diferente do modelo médico, a psicologia junguiana não tem como intuito principal identificar um sintoma e/ou um diagnóstico e eliminá-lo. 
-O que se faz na análise é pensar o diagnóstico como um todo, entender os sintomas, sua história, sua função e, a partir da singularidade de cada pessoa, aprender a lidar com eles da melhor forma.É a partir da relação da pessoa com seu sintoma e da forma como ela narra sobre seu sofrimento que se propõe a pensar formas para lidar com eles.`,
+              answer: `Sim, a Psicologia Analítica pode ser uma forma de tratamento para qualquer sofrimento psíquico. Porém, diferente do modelo médico, a psicologia Analítica não tem como intuito principal identificar um sintoma e/ou um diagnóstico e eliminá-lo. 
+              O que se faz na análise é pensar o diagnóstico como um todo, entender os sintomas, sua história, sua função e, a partir da singularidade de cada pessoa, aprender a lidar com eles da melhor forma.É a partir da relação da pessoa com seu sintoma e da forma como ela narra sobre seu sofrimento que se propõe a pensar formas para lidar com eles.`,
             },
             {
               question: 'Atende por convênio?',

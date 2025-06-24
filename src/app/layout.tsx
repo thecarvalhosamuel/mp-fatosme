@@ -43,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='pt-br'>
-      <Head>
+      <head>
         {/* Favicon tradicional */}
         <link rel="icon" type="image/png" sizes="512x512" href="/images/favicons/favicon-512x512.png" />
         <link rel="icon" type="image/png" sizes="256x256" href="/images/favicons/favicon-256x256.png" />
@@ -55,7 +55,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="48x48" href="/images/favicons/favicon-48x48.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png" />
-        <link rel="shortcut icon" href="/images/favicons/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
 
         {/* Apple Touch Icon */}
         <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/favicon-180x180.png" />
@@ -69,7 +69,7 @@ export default function RootLayout({
           rel='stylesheet'
           href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css'
         />
-      </Head>
+      </head>
       <body
         className={`${montserratSan.variable} ${firaCode.variable} `}
       >
